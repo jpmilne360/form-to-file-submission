@@ -1,0 +1,39 @@
+
+
+/* base.html  */
+
+body {
+    padding-bottom: 5rem; /* leaves whitespace below body content*/
+}
+
+.choices-nav {
+    background-color: rgb(20, 71, 107);
+}
+.choices-nav-divider {
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    height: 25px;
+}
+.choices-nav .nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.choices-nav .nav-link:hover {
+    text-color: #CFE5F4;
+    text-decoration: underline;
+}
+.choices-nav .form-control {
+    max-width: 200px;
+}
+
+.main-hero-container {
+    background-color: #CFE5F4;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/* terms and conditions on presubmit.html  */
+.preview-collapse {
+    max-height: 3em;
+    overflow: hidden;
+    }

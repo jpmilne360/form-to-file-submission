@@ -1,0 +1,8 @@
+blinker
+click
+Flask
+Flask-Login
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug

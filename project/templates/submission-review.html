@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 col-lg-5">
+        <h3>Submission</h3>
+        <hr>
+        <h4>Name</h4>
+        <p>{{ saved_file.get("Name", "") }}</p>
+        <hr>
+        <h4>Date/Time</h4>
+        <p>{{ saved_file.get("Date and Time", "") }}</p>
+        <hr>
+        <h4>Food Choice</h4>
+        <ul>
+            {% for key, value in saved_file.items() if "Food choice" in key %}
+                <li>{{ value }}</li>
+            {% endfor %}
+        </ul>
+        <hr>
+        <h4>File Upload</h4>
+        <pre>{{ saved_file.get("File", "") }}</pre>
+        <hr>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/submission-review.js') }}"></script>
+{% endblock %}
